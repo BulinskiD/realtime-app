@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/realtime-remix.iml" filepath="$PROJECT_DIR$/.idea/realtime-remix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../socket-server/.idea/socket-server.iml" filepath="$PROJECT_DIR$/../socket-server/.idea/socket-server.iml" />
+    </modules>
+  </component>
+</project>

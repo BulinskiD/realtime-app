@@ -1,0 +1,63 @@
+{
+  "version": "ca6e8933",
+  "entry": {
+    "module": "/build/entry.client-YVTCU23I.js",
+    "imports": [
+      "/build/_shared/chunk-KAGKDUQA.js",
+      "/build/_shared/chunk-6YBAKCQ6.js",
+      "/build/_shared/chunk-WMTUB2ZO.js"
+    ]
+  },
+  "routes": {
+    "root": {
+      "id": "root",
+      "path": "/",
+      "module": "/build/root-2LKUWC6P.js",
+      "hasAction": false,
+      "hasLoader": true
+    },
+    "routes/404": {
+      "id": "routes/404",
+      "parentId": "root",
+      "path": "*",
+      "caseSensitive": false,
+      "module": "/build/routes/404-UZ5KGGHB.js",
+      "hasAction": false,
+      "hasLoader": false
+    },
+    "routes/game/$userName/$id": {
+      "id": "routes/game/$userName/$id",
+      "parentId": "root",
+      "path": "game/:userName/:id",
+      "caseSensitive": false,
+      "module": "/build/routes/game/$userName/$id-6HAMLPQS.js",
+      "imports": [
+        "/build/_shared/chunk-KALQTHMZ.js"
+      ],
+      "hasAction": false,
+      "hasLoader": false
+    },
+    "routes/game/$userName/index": {
+      "id": "routes/game/$userName/index",
+      "parentId": "root",
+      "path": "game/:userName",
+      "caseSensitive": false,
+      "module": "/build/routes/game/$userName/index-PYYDWYIU.js",
+      "imports": [
+        "/build/_shared/chunk-KALQTHMZ.js"
+      ],
+      "hasAction": true,
+      "hasLoader": true
+    },
+    "routes/index": {
+      "id": "routes/index",
+      "parentId": "root",
+      "path": "/",
+      "caseSensitive": false,
+      "module": "/build/routes/index-RC4EJAN4.js",
+      "hasAction": true,
+      "hasLoader": false
+    }
+  },
+  "url": "/build/manifest-CA6E8933.js"
+}
