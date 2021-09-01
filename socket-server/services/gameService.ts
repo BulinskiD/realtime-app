@@ -38,24 +38,15 @@ class GameService {
   }
 
   put(id: string, params: Partial<Game>) {
-    const game = this.games[id];
-    if (game) {
-      const updatedGame = { ...this.games[id], ...params };
-      this.games[id] = updatedGame;
-      console.log(this.games);
-      return updatedGame;
-    }
-
-    throw new Error(`Game with id: ${id} has not been found!`);
+    const game = this.get(id);
+    const updatedGame = { ...game, ...params };
+    this.games[id] = updatedGame;
+    return updatedGame;
   }
 
   addUser({ userName, id }: { userName: string; id: string }): void {
-    if (this.games[id]) {
-      this.games[id].user2 = userName;
-      return;
-    }
-
-    throw new Error(`Game with id: ${id} has not been found!`);
+    const game = this.get(id);
+    this.games[id].user2 = userName;
   }
 }
 

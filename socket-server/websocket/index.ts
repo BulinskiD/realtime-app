@@ -4,8 +4,6 @@ import { Express } from "express";
 import { gameService } from "../services/gameService";
 
 export function createSocket(app: Express) {
-  const messages: string[] = [];
-
   const server = http.createServer(app);
 
   const io = new Server(server, {
@@ -35,15 +33,6 @@ export function createSocket(app: Express) {
       }
       socket.disconnect(true);
     }
-  });
-
-  io.on("connection", (socket) => {
-    socket.emit("msg:get", messages);
-
-    socket.on("msg:post", (data) => {
-      messages.push(data);
-      io.emit("msg:get", messages);
-    });
   });
 
   return server;
